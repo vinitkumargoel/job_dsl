@@ -1,7 +1,3 @@
-def signature = 'new groovy.json.JsonSlurperClassic'
-org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignature(signature)
-
-
 job("build-java") {
     parameters{
       string(name: 'branch', defaultValue: 'master', description: 'Please enter branch')
